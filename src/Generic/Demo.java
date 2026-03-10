@@ -38,10 +38,11 @@ public class Demo {
 		driver.navigate().refresh();
 
 		// Navigate forward to BookMyShow page again
-		driver.navigate().forward();
+		driver.navigate().forward();	
 
 		// Close the browser and end the WebDriver session
 		driver.quit();
+		
 		    
 	}
 

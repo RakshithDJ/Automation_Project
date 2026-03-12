@@ -27,14 +27,19 @@ public class Locators {
 		driver.manage().window().maximize();
 
 		// Open the LG India website
-		driver.get("https://demoqa.com/");
+		driver.get("https://playwright.dev/docs/locators");
 
 		// Wait for 2 seconds to let page load
 		Thread.sleep(2000);
 		
-		//driver.findElement(By.tagName("h5")).click();
+	    String s1 =driver.findElement(By.tagName("b")).getText();
 		
-		driver.quit();
+	    System.out.println(s1);
+	    
+	    String s2= driver.findElement(By.id("locating-elements")).getText();
+	    System.out.println(s2);
+		
+	    driver.quit();
 		
 		
 

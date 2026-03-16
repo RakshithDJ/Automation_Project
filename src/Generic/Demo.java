@@ -1,49 +1,67 @@
 package Generic;
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo {
 
 	public static void main(String[] args) throws InterruptedException {
-	 
-		// Launch Chrome browser
+
+		// Launch Chrome browser using ChromeDriver
 		WebDriver driver = new ChromeDriver();
 
-		// Maximize the browser window
+		// Access browser management options
+		Options opt = driver.manage();
+
+		// Access window control functions
+		Window win = opt.window();
+
+		// Maximize the browser window (first time)
+		win.maximize();
+
+		// Maximize the browser window (second way)
 		driver.manage().window().maximize();
 
-		// Open LG India website
+		// Open the LG India website
 		driver.get("https://www.lg.com/in/");
 
-		// Capture the title of the current webpage
-		String title = driver.getTitle();
+		// Wait for 2 seconds to let page load
+		Thread.sleep(2000);
 
-		// Capture the current URL of the webpage
-		String Url = driver.getCurrentUrl();
+		// Delete all cookies from browser
+		driver.manage().deleteAllCookies();
 
-		// Print the current URL
-		System.out.println(Url);
+		// Wait for 2 seconds after deleting cookies
+		Thread.sleep(2000);
 
-		// Print the title of the opened webpage
-		System.out.println(title);
+		// Set window to full-screen mode
+		driver.manage().window().fullscreen();
 
-		// Navigate to BookMyShow website
-		driver.navigate().to("https://in.bookmyshow.com/");
+		// Wait for 2 seconds
+		Thread.sleep(2000);
 
-		// Navigate back to the previous page (LG website)
-		driver.navigate().back();
+		// Resize browser window to width=200 and height=100 pixels
+		driver.manage().window().setSize(new Dimension(200, 100));
 
-		// Refresh the current page
-		driver.navigate().refresh();
+		// Wait for 2 seconds to observe size change
+		Thread.sleep(2000);
 
-		// Navigate forward to BookMyShow page again
-		driver.navigate().forward();	
+		// Move browser window to screen position x=100, y=200
+		driver.manage().window().setPosition(new Point(100, 200));
 
-		// Close the browser and end the WebDriver session
+		// Wait for 2 seconds to observe position change
+		Thread.sleep(2000);
+
+		// Minimize the browser window
+		driver.manage().window().minimize();
+
+		Thread.sleep(2000);
 		driver.quit();
-		
-		    
+
 	}
 
 }

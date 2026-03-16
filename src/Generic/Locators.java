@@ -21,73 +21,77 @@ public class Locators {
 
 	public static void main(String[] args) throws InterruptedException {
 	
-		// Launch Chrome browser using ChromeDriver
+		// Launch Chrome browser
 		WebDriver driver = new ChromeDriver();
 
-		// Maximize browser window
+		// Maximize the browser window
 		driver.manage().window().maximize();
 
-		// Open the LG India website (Playwright Locators page actually)
+		// Open the Playwright Locators documentation page
 		driver.get("https://playwright.dev/docs/locators");
 
-		// Wait for 2 seconds to let page load
+		// Pause for 2 seconds to allow the page to load
 		Thread.sleep(2000);
 
-		// Locate the FIRST <b> tag on the webpage and get its text
+		// Fetch the text of the first <b> tag on the page
 		String s1 = driver.findElement(By.tagName("b")).getText();
 
-		// Print the text of the <b> tag
+		// Display the extracted <b> tag text
 		System.out.println(s1);
 
-		// Locate element by its ID 'locating-elements' and get its text
+		// Fetch the text of the element with ID 'locating-elements'
 		String s2 = driver.findElement(By.id("locating-elements")).getText();
 
-		// Print the text obtained from the ID element
+		// Display the extracted text from the ID element
 		System.out.println(s2);
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Locate element using CLASS NAME "DocSearch-Button-Container"
-		// and type "Sel" into it (Note: this element may not accept typing)
-		//driver.findElement(By.className("DocSearch-Button-Placeholder")).sendKeys("Sel");
+		// Click element using CLASS NAME "DocSearch-Search-Icon"
+		driver.findElement(By.className("DocSearch-Search-Icon")).click();
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Navigate to local HTML file Demo.html
+		// Navigate to the local Demo.html file
 		driver.navigate().to("file:///C:/Users/rakshith.s/Desktop/Demo.html");
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Locate input element using NAME locator and type "Ram"
+		// Enter text "Ram" into the input field identified by NAME 'username'
 		driver.findElement(By.name("username")).sendKeys("Ram");
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Click the link whose visible text is exactly "Home"
+		// Click the link with exact text "Home"
 		driver.findElement(By.linkText("Home")).click();
 
-		// Navigate back to previous page
+		// Go back to the previous page
 		driver.navigate().back();
 
-		// Click link containing partial text "About"
+		// Click the link whose text partially contains "About"
 		driver.findElement(By.partialLinkText("About")).click();
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Navigate back again
+		// Navigate back to the Demo.html page
 		driver.navigate().back();
 
-		// Wait for 2 seconds
+		// Pause for 2 seconds
 		Thread.sleep(2000);
 
-		// Locate input field using CSS selector (placeholder attribute)
-		// and type an email address into it
-		//driver.findElement(By.cssSelector("input[placeholder=Enter Email]")).sendKeys("dj@gmail.com");
+		// Enter an email in the input field located using CSS selector
+		driver.findElement(By.cssSelector("input[type='email']")).sendKeys("dj@gmail.com");
+
+		// Pause for 2 seconds before submitting the form
+		Thread.sleep(2000);
+
+		// Click the Submit button using XPath
+		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		
 		driver.quit();
 

@@ -51,7 +51,7 @@ public class TestScript2 {
 		System.out.println(email.getText());
 
 		// Prints the value of the "name" attribute of the email element
-		System.out.println(email.getAttribute("name"));
+		System.out.println(email.getAttribute("autocomplete"));
 		
 		driver.quit();
 	}

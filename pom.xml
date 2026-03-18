@@ -22,11 +22,11 @@
 		</plugins>
 	</build>
 	<dependencies>
-	
+	<!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.35.0</version>
+            <version>4.41.0</version>
         </dependency>
 
         <!-- APACHE POI -->

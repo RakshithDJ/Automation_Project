@@ -23,20 +23,24 @@ public class TestScript1 {
 		//Myntra Application fetching the first HRX shoe price using Relative Xpath
 		driver.get("https://www.myntra.com/men-footwear");
 		String S=driver.findElement(By.xpath("(//h3[contains(text(),'HRX' )]/..//span[contains(text(),'Rs. ')])[1]")).getText();
-		System.out.println(S);
-		
+		System.out.println("The First HRX shoe price is :"+ S);
 		Thread.sleep(2000);
 		driver.navigate().to("https://www.flipkart.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[@role='button']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.name("q")).sendKeys("Iphone 16",Keys.ENTER);
 		Thread.sleep(2000);
 		String S1=driver.findElement(By.xpath("((//div[contains(text(),'Apple iPhone 16')])[3]/../..//div[contains(text(),'₹')])[1]")).getText();
-		System.out.println(S1);
-		
-				
-		
+		System.out.println("The Third Iphone 16 price is: "+S1);
+		driver.navigate().to("https://www.amazon.in/");
+		Thread.sleep(2000);
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Samsung S26",Keys.ENTER);
+		Thread.sleep(2000);
+	    String S3=	driver.findElement(By.xpath("//span[contains(text(),'Samsung')][last()]")).getText();
+	    Thread.sleep(2000);
+		System.out.println("The last samsung phone price is :"+S3);
 		driver.quit();
-
 	}
 
 }

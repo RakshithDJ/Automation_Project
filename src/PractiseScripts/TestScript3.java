@@ -21,6 +21,7 @@ public class TestScript3 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.facebook.com/");
+		
 		// Locate the email input field using its 'name' attribute
 		WebElement email = driver.findElement(By.name("email"));
 

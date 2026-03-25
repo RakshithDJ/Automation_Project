@@ -30,8 +30,7 @@ public class TestScript9 {
 			System.out.println(link.getText());}
         System.out.println("The count of links are :"+count);
         driver.quit();
-		
-
+	
 	}
 
 }

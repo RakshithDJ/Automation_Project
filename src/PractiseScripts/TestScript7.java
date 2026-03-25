@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /***
  * To Print all the links in flipkart 
+ * This is done using FindElements 
  */
 
 public class TestScript7 {

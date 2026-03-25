@@ -29,6 +29,7 @@ public class TestScript9 {
 			WebElement link = L.get(i);
 			System.out.println(link.getText());}
         System.out.println("The count of links are :"+count);
+        driver.quit();
 		
 
 	}

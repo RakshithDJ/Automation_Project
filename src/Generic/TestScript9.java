@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import PractiseScripts.TestScript8;
 
 /***
@@ -30,7 +29,6 @@ public class TestScript9 {
 			System.out.println(link.getText());}
         System.out.println("The count of links are :"+count);
         driver.quit();
-	
 	}
 
 }

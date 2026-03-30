@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /***
  * Open QSP app ->UI Tetsing-->checkbox-->Select 10 checkbox
- * {@link}
+ * {@link TestScript9}
  * @author rakshith.s 
  */
 

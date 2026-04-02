@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /***
  * Open browsser & Navigate to flipkart application and type iphone 17 pro max in the search box and print all the autosuggetsions.
  * click on enter button in the search box & print all the mobile name and all the mobile price from the product list page. 
- * @link
+ * @link TestScript10
  * @author rakshith.s
  */
 

@@ -19,20 +19,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //Failing need to be reviewed
 class TestScript12 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 	WebDriver driver = new ChromeDriver();	
 	driver.manage().window().maximize();
-	WebDriverWait W = new WebDriverWait(driver,Duration.ofSeconds(5));
-	driver.get("https://demoqa.com/");
-	W.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@href])[8]"))).click();
-	W.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("((//*[@stroke=\"currentColor\"])[41]"))).click();
-	W.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Login']"))).click();
-	System.out.println("Waits Executed");
-	driver.quit();
-	
-
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(25));
+	driver.get("https://demoapps.qspiders.com/");
+	driver.findElement(By.xpath("//p[text()='UI Testing Concepts']")).click();
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//section[text()='Synchronization']"))).click();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section[text()='Progress Bar']"))).click();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Start']"))).click();
+    Boolean h =wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//span[text()='100%']"),"100%"));
+    System.out.println(h);
+    driver.quit();
+	 
 		
 	}
 
 }
+

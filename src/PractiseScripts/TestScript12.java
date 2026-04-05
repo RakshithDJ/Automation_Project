@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 /***
- * DemoQSP Synchorginazation Automated
+ * DemoQSP synchronization Automated
  * @author rakshiths
  */
 

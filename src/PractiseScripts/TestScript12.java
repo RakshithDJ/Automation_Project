@@ -9,8 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
 /***
  * This TestScript defines Waits 
  * Implicit wait
@@ -33,8 +31,7 @@ class TestScript12 {
 	WebDriver driver = new ChromeDriver();	
 	driver.manage().window().maximize();
 	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15)); 
-    
- // Navigate to the demo application URL
+    // Navigate to the demo application URL
     driver.get("https://demoapps.qspiders.com/");
 
     // Click on the 'UI Testing Concepts' section link
@@ -111,6 +108,8 @@ class TestScript12 {
 
     // Print the text retrieved from the 'Do you like Automation' element before it disappeared
     System.out.println(text2);
+    
+    Thread.sleep(2000);
 
     // Close the browser and end the WebDriver session
     driver.quit();

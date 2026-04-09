@@ -16,11 +16,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestScript7 {
 	
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	
+
 		// Opens the Flipkart website in the browser
 		driver.get("https://www.flipkart.com/");
 
@@ -45,11 +45,8 @@ public class TestScript7 {
 		// Iterates through each link present on the webpage
 		for (int i = 0; i < count; i++) {
 
-			// Retrieves the current WebElement from the list
-			WebElement W = D.get(i);
-
 			// Prints the index and visible text of each link
-			System.out.println(i + ":" + W.getText());
+			System.out.println(i + ":" + D.get(i).getText());
 		}
 
 		// Closes the browser and ends the WebDriver session

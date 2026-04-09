@@ -1,19 +1,19 @@
 package PractiseScripts;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 /***
  * This TestScript will handle search select dropdown.
  * {@link TestScript14}
  * @author rakshith.s
  */
+
+//Changes need to be done 
 
 public class TestScript15 {
 
@@ -46,14 +46,19 @@ public class TestScript15 {
 		driver.findElement(By.linkText("Search With Select")).click();
 		//Clicks on the "search with Select" option to open the multi-select dropdown page.
 		
-		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(5));
+		driver.findElement(By.xpath("(//*[@aria-hidden='true'])[1]")).click();
 		
-		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@aria-hidden=\"true\"])[1]"))).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='react-select-2-input']")).sendKeys("+92",Keys.ENTER);	
+		driver.findElement(By.xpath("//div[@role='option' and text()='+92']")).click();
+		
+		driver.findElement(By.xpath("//div[text()='Select Gender']")).click();
+		
+		//driver.findElement(By.xpath("")).click();
 		
 		Thread.sleep(2000);
-		 driver.quit();
+		
+		driver.quit();
+		
+		
 		    
 	    }	
 	    

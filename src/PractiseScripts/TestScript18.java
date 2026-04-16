@@ -10,9 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 /***
  * This TestScript handles the Hidden divison Popup. {@link TestScript17 , TestScript16}
- * 
  * @author rakshith.s
- */
+ ***/
 public class TestScript18 {
 
 	public static void main(String[] args) throws InterruptedException {

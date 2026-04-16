@@ -2,12 +2,12 @@ package PractiseScripts;
 
 import java.time.Duration;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /***
+ * This TestScript handles the Prompt Popup 
  * {@link TestScript16}
  * @author rakshith.s
  */

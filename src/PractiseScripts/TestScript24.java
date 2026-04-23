@@ -85,30 +85,30 @@ public class TestScript24 {
 		
 	    driver.findElement(By.xpath("//a[text()='Drag Multiple']")).click();
 		
-		List<WebElement> ele = driver.findElements(By.className("draggable-elemment"));
-		
+		   List<WebElement> ele = driver.findElements(By.className("draggable-elemment"));
 		   WebElement mb = driver.findElement(By.xpath("//div[text()='Mobile Accessories']"));
+		   WebElement lp = driver.findElement(By.xpath("//div[text()='Laptop Accessories']"));
 		   int count = ele.size();
 		   System.out.println("Size:"+count);
+		   
 		   for(WebElement tx:ele)
 		   {
 			
-			if(tx.getText().contains("Mobile"))
-					{
-
-               a.clickAndHold(tx)
-                .moveToElement(mb)
-                .release()
-                .build()
-                .perform();
-
-					}
-		     }
+		  if((tx.getText().contains("Mobile")) &&(tx.getText().contains("Laptop")))
+		     {
+				Thread.sleep(2000);
+				tx.click();
+              	
+			 }
+			WebElement g = driver.findElement(By.id("dragElement1")); 
+		//	WebElement h = driver.findElement(By.id("dragElement")); 
+            a.clickAndHold(g).moveToElement(mb).release().perform();
+            Thread.sleep(2000);
+      ///      a.clickAndHold(h).moveToElement(lp).release().perform();
+		    }
 		
-     	//Script neeed to be edited 
-		//driver.quit();
-		// Closes the browser and terminates the Web
+     
 	    
-	}
+	} 
 	
 }

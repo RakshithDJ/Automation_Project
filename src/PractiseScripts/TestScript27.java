@@ -1,6 +1,7 @@
 package PractiseScripts;
 
 import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,14 +12,14 @@ import org.openqa.selenium.interactions.Actions;
 /***
  * This Script handles MouseActions 
  * Icon Script
- * {@link TestScript24 ,TestScript25}
+ * {@link TestScript26 ,TestScript25,}
  * @author rakshith.s
  ***/
 
-public class TestScript26 {
+public class TestScript27 {
 
 	public static void main(String[] args) throws InterruptedException {
-		
+	
 		ChromeOptions options = new ChromeOptions();
 		// Creating ChromeOptions object to customize Chrome browser behavior
 
@@ -33,22 +34,19 @@ public class TestScript26 {
 
 		driver.get("https://demoapps.qspiders.com/ui/mouseHover");
 		// Navigates to the QSpiders mouse hover demo page
-
-		WebElement m = driver.findElement(By.xpath("(//img[@src])[3]"));
-		// Locates the third image element on the page which requires mouse hover action
-
-		Thread.sleep(2000);
-		// Pauses execution for 2 seconds to ensure page stability before hovering
-
-		Actions a = new Actions(driver);
-		// Creates an Actions class object to perform advanced user interactions
-
-		a.moveToElement(m).perform();
-		// Performs mouse hover (move to element) action on the identified image
-
-		driver.quit();
-		// Closes the browser and ends the WebDriver session
 	
+		driver.findElement(By.xpath("//a[text()='Image']")).click();
+		
+		WebElement img = driver.findElement(By.xpath("(//img)[2]"));
+		
+		Actions a = new Actions(driver);
+		a.moveToElement(img).perform();
+		
+		Thread.sleep(5000);
+		System.out.println("Hovered on image");
+		
+		driver.quit();
+
 	}
 
 }

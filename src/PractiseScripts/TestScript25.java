@@ -11,8 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 
 /***
  *This Script handles MouseAction 
- * {@link TestScript24}
- * @author rakshith.s
+ *Drag and Drop
+ *{@link TestScript24}
+ *@author rakshith.s
  ***/
 
 public class TestScript25 {

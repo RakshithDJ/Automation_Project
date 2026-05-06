@@ -14,9 +14,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 
 public class TestScript4 {
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -24,16 +24,15 @@ public class TestScript4 {
 		driver.findElement(By.xpath("//span[text()='Log in']")).click();
 		Thread.sleep(2000);
 
-		 // Locate the error message element
-		        WebElement errorMsg = driver.findElement(By.xpath("//span[contains(text(),'The email address')]"));
+		// Locate the error message element
+		WebElement errorMsg = driver.findElement(By.xpath("//span[contains(text(),'The email address')]"));
 
-		        // Get the CSS color property
-		        String color = errorMsg.getCssValue("color");
+		// Get the CSS color property
+		String color = errorMsg.getCssValue("color");
 
-		        System.out.println("Error message color: " + color);
+		System.out.println("Error message color: " + color);
 
 		driver.quit();
-		
-		
+
 	}
 }

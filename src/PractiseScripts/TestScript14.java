@@ -1,6 +1,8 @@
 package PractiseScripts;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -77,12 +79,22 @@ public class TestScript14 {
 			S.deselectByIndex(i);
 			// Deselects each option using its index value
 		}
-
+		List<String> l = new ArrayList<String>();
+		for(WebElement o1 : o)
+		{
+		   l.add(o1.getText());
+		}
+		Collections.sort(l);
+		System.out.println("------------------");
+		System.out.println("The Alphabetically Sorted :-");
+		for(String l1 : l)
+		{
+			System.out.println(l1);
+		}		
 		System.out.println("Selcted and Deselected");
 		// Prints a message indicating all options were selected and then deselected
 		driver.quit();
-	    
-		
+	    		
 	}
 }
 

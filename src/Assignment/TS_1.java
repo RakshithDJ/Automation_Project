@@ -30,9 +30,11 @@ public class TS_1 {
   Thread.sleep(2000);
   // Get the current URL
   String currentUrl = driver.getCurrentUrl();
+  // Print the current URL to console
   System.out.println("Current URL: " + currentUrl);
   // Delete all cookies
   driver.manage().deleteAllCookies();
+  // Print confirmation message after deleting cookies
   System.out.println("All cookies deleted");
   // Define the expected page title
   String Expected_Title = "DemoApps | Qspiders";
@@ -46,11 +48,17 @@ public class TS_1 {
    // Print failure message if titles don't match
    System.out.println("Title is not Matching");
   }
+  // Print the expected title to console
   System.out.println("Expected Title: " + Expected_Title);
+  // Print the actual title to console
   System.out.println("Actual Title: " + Actual_Title);
+  // Retrieve the page source code
   String source = driver.getPageSource();
+  // Print the page source to console
   System.out.println("Page Source :-"+source);
+  // Set the browser window size to 250x450 pixels
   driver.manage().window().setSize(new Dimension(250,450));
+  // Minimize the browser window
   driver.manage().window().minimize();
   // Close the browser and end the session
   driver.quit();
@@ -58,3 +66,4 @@ public class TS_1 {
  }
 
 }
+

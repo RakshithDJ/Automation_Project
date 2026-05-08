@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /***
  * This TestScriipt will automate the process of navigating to a demo application with nested iframes, extracting credentials from the iframe, and using those credentials to fill out a form in the main content area. It demonstrates the use of both implicit and explicit waits to handle dynamic web elements effectively.
@@ -18,9 +19,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class TestScript28 {
 
 	public static void main(String[] args) throws InterruptedException {
+		
 	
+		
+		ChromeOptions options = new ChromeOptions();
+		// Add headless argument before initializing ChromeDriver
+		options.addArguments("--headless");
 		// Initialize ChromeDriver and configure basic settings
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		

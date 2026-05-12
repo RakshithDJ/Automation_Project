@@ -56,5 +56,10 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>Test</groupId>
+			<artifactId>Automation</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

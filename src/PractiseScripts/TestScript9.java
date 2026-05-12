@@ -1,4 +1,4 @@
-package Generic;
+package PractiseScripts;
 
 import java.time.Duration;
 import java.util.List;
@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import PractiseScripts.TestScript8;
 
 /***
  * Open Facebook Application and Print all the URL's in the WebPage

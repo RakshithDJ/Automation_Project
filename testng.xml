@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-		 <class name="com.orange.Testscript.TestScript1"/>
-		  <class name="com.orange.Testscript.TestScript2"/>
-      <class name="com.orange.Testscript.TestScript3"/>
+      <class name="com.orange.Testscript.TestScript4"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

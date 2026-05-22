@@ -9,7 +9,7 @@
           <include name="OpenBrowser"/>
           <include name="browserClose"/>
           <include name="login"/>
-          <include name="trailRun"/>
+          <include name="creatAdminData"/>
         </methods>
       </class> <!-- com.orange.Testscript.TestScript4 -->
     </classes>

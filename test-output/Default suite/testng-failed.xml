@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orange.generic.BaseClass">
+      <class name="com.orange.Testscript.TestScript4">
         <methods>
+          <include name="logout"/>
+          <include name="OpenBrowser"/>
+          <include name="browserClose"/>
           <include name="login"/>
+          <include name="trailRun"/>
         </methods>
-      </class> <!-- com.orange.generic.BaseClass -->
+      </class> <!-- com.orange.Testscript.TestScript4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

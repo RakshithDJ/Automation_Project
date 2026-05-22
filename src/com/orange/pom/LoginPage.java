@@ -12,12 +12,13 @@ public class LoginPage extends BaseClass {
 	private WebElement userNameTextField;
 
 	@FindBy(name = "password")
-	private WebElement passwordNameTextField;
+	private WebElement passwordTextField;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement loginButton;
 
 	public LoginPage(WebDriver driver) {
+		
 		PageFactory.initElements(driver, this);
 	}
 
@@ -25,8 +26,8 @@ public class LoginPage extends BaseClass {
 		return userNameTextField;
 	}
 
-	public WebElement getPasswordNameTextField() {
-		return passwordNameTextField;
+	public WebElement getPasswordTextField() {
+		return passwordTextField;
 	}
 
 	public WebElement getLoginButton() {

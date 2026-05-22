@@ -28,7 +28,7 @@ public class LoginPage extends BaseClass {
 
 	public WebElement getPasswordTextField() {
 		return passwordTextField;
-	}
+	}           
 
 	public WebElement getLoginButton() {
 		return loginButton;

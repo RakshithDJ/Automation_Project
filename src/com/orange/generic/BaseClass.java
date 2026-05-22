@@ -2,9 +2,9 @@ package com.orange.generic;
 
 import java.io.IOException;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -16,12 +16,14 @@ import com.orange.pom.LogoutPage;
 
 public class BaseClass implements IAutoConstant {
 
-	static WebDriver driver;
+	public static WebDriver driver;
 	public LoginPage loginpage;
 	public LogoutPage logoutpage;
 	public FileLib lib;
+	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Create explicit wait for admin
+																					// actions
 
-	@BeforeClass(alwaysRun=true)
+	@BeforeClass
 	public void OpenBrowser() throws IOException {
 		driver = new ChromeDriver(); // Launch Chrome browser
 		driver.manage().window().maximize(); // Maximize browser window
@@ -32,8 +34,8 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Browser Opened and Navigated to URL: " + url, true);
 	}
 
-	@BeforeMethod(alwaysRun=true)
-	public void login() throws IOException {
+	@BeforeMethod
+	public void login() throws IOException {                                      
 		loginpage = new LoginPage(driver);
 		String username = lib.readPropertyData(PROPERTIES_PATH, "un");
 		String password = lib.readPropertyData(PROPERTIES_PATH, "pwd");
@@ -43,15 +45,15 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Logged in with username: " + username, true);
 	}
 
-	@AfterMethod(alwaysRun=true)
+	@AfterMethod                                     
 	public void logout() {
 		logoutpage = new LogoutPage(driver);
-	//	logoutpage.getProfileMenuIcon().click();
+		logoutpage.getProfileMenuIcon().click();
 		logoutpage.getLogoutOption().click();
 		Reporter.log("Logged out successfully", true);
 	}
 
-	@AfterClass(alwaysRun=true)
+	@AfterClass(alwaysRun = true)
 	public void browserClose() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.quit();
@@ -59,3 +61,4 @@ public class BaseClass implements IAutoConstant {
 	}
 
 }
+

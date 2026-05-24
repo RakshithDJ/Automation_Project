@@ -24,9 +24,6 @@ public class TestScript30 {
 		System.out.println(un);
 		System.out.println(pwd);
 		driver.quit();
-		
-		
-
 	}
 
 }

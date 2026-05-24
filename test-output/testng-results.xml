@@ -17,40 +17,40 @@
       <![CDATA[Browser closed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-05-22T17:01:50 IST" name="Default suite" finished-at="2026-05-22T17:02:13 IST" duration-ms="22214">
+  <suite started-at="2026-05-24T17:21:11 IST" name="Default suite" finished-at="2026-05-24T17:21:25 IST" duration-ms="14506">
     <groups>
     </groups>
-    <test started-at="2026-05-22T17:01:50 IST" name="Default test" finished-at="2026-05-22T17:02:13 IST" duration-ms="22214">
+    <test started-at="2026-05-24T17:21:11 IST" name="Default test" finished-at="2026-05-24T17:21:25 IST" duration-ms="14506">
       <class name="com.orange.Testscript.TestScript4">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.orange.Testscript.TestScript4@51bf5add]" started-at="2026-05-22T17:01:50 IST" name="OpenBrowser" finished-at="2026-05-22T17:02:01 IST" duration-ms="10551" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.orange.Testscript.TestScript4@1e178745]" started-at="2026-05-24T17:21:11 IST" name="OpenBrowser" finished-at="2026-05-24T17:21:18 IST" duration-ms="7468" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Opened and Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.orange.Testscript.TestScript4@51bf5add]" started-at="2026-05-22T17:02:01 IST" name="login" finished-at="2026-05-22T17:02:02 IST" duration-ms="1251" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.orange.Testscript.TestScript4@1e178745]" started-at="2026-05-24T17:21:18 IST" name="login" finished-at="2026-05-24T17:21:19 IST" duration-ms="722" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in with username: Admin]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="creatAdminData()[pri:0, instance:com.orange.Testscript.TestScript4@51bf5add]" started-at="2026-05-22T17:02:02 IST" name="creatAdminData" finished-at="2026-05-22T17:02:08 IST" duration-ms="5528" status="PASS">
+        <test-method signature="creatAdminData()[pri:0, instance:com.orange.Testscript.TestScript4@1e178745]" started-at="2026-05-24T17:21:19 IST" name="creatAdminData" finished-at="2026-05-24T17:21:22 IST" duration-ms="2870" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Admin TestCase Pass ]]>
             </line>
           </reporter-output>
         </test-method> <!-- creatAdminData -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.orange.Testscript.TestScript4@51bf5add]" started-at="2026-05-22T17:02:08 IST" name="logout" finished-at="2026-05-22T17:02:10 IST" duration-ms="2534" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.orange.Testscript.TestScript4@1e178745]" started-at="2026-05-24T17:21:22 IST" name="logout" finished-at="2026-05-24T17:21:23 IST" duration-ms="1328" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@51bf5add]" started-at="2026-05-22T17:02:10 IST" name="browserClose" finished-at="2026-05-22T17:02:13 IST" duration-ms="2297" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@1e178745]" started-at="2026-05-24T17:21:23 IST" name="browserClose" finished-at="2026-05-24T17:21:25 IST" duration-ms="2103" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>

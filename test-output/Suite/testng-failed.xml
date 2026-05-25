@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.orange.Testscript.TestScript4">
         <methods>
@@ -9,7 +14,7 @@
           <include name="OpenBrowser"/>
           <include name="browserClose"/>
           <include name="login"/>
-          <include name="trailRun"/>
+          <include name="creatAdminData"/>
         </methods>
       </class> <!-- com.orange.Testscript.TestScript4 -->
     </classes>

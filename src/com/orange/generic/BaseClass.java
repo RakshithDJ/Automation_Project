@@ -23,7 +23,7 @@ public class BaseClass implements IAutoConstant {
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Create explicit wait for admin
 																					// actions
 
-	@BeforeClass
+	@BeforeClass(groups= {"RegressionTest","SmokeTest"})
 	public void OpenBrowser() throws IOException {
 		driver = new ChromeDriver(); // Launch Chrome browser
 		driver.manage().window().maximize(); // Maximize browser window
@@ -34,7 +34,7 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Browser Opened and Navigated to URL: " + url, true);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups= {"RegressionTest","SmokeTest"})
 	public void login() throws IOException {                                      
 		loginpage = new LoginPage(driver);
 		String username = lib.readPropertyData(PROPERTIES_PATH, "un");
@@ -45,7 +45,7 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Logged in with username: " + username, true);
 	}
 
-	@AfterMethod                                     
+	@AfterMethod(groups= {"RegressionTest","SmokeTest"})                                    
 	public void logout() {
 		logoutpage = new LogoutPage(driver);
 		logoutpage.getProfileMenuIcon().click();
@@ -53,7 +53,7 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Logged out successfully", true);
 	}
 
-	@AfterClass(alwaysRun = true)
+	@AfterClass(groups= {"RegressionTest","SmokeTest"})
 	public void browserClose() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.quit();

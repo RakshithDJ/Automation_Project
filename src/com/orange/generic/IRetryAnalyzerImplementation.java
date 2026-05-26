@@ -18,5 +18,4 @@ public class IRetryAnalyzerImplementation implements IRetryAnalyzer{
 		
 		return false; // stop retry
 	}
-
 }

@@ -9,7 +9,7 @@
           <include name="OpenBrowser"/>
           <include name="browserClose"/>
           <include name="login"/>
-          <include name="creatAdminData"/>
+          <include name="verifiyTitle"/>
         </methods>
       </class> <!-- com.orange.Testscript.TestScript4 -->
     </classes>

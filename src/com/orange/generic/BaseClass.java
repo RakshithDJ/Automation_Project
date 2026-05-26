@@ -37,8 +37,8 @@ public class BaseClass implements IAutoConstant {
 	@BeforeMethod(groups= {"RegressionTest","SmokeTest"})
 	public void login() throws IOException {                                      
 		loginpage = new LoginPage(driver);
-		String username = lib.readPropertyData(PROPERTIES_PATH, "un");
-		String password = lib.readPropertyData(PROPERTIES_PATH, "pwd");
+		String username = lib.readExcelData("Login", 1, 0);
+		String password = lib.readExcelData("Login", 1, 1);
 		loginpage.getUserNameTextField().sendKeys(username);
 		loginpage.getPasswordTextField().sendKeys(password);
 		loginpage.getLoginButton().click();

@@ -2,29 +2,28 @@ package com.orange.generic;
 
 import java.io.IOException;
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 import com.orange.pom.LoginPage;
 import com.orange.pom.LogoutPage;
 
 public class BaseClass implements IAutoConstant {
-
 	public static WebDriver driver;
 	public LoginPage loginpage;
 	public LogoutPage logoutpage;
 	public FileLib lib;
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Create explicit wait for admin
-																					// actions
+	public DataProviders data;																				// actions
 
 	@BeforeClass(groups= {"RegressionTest","SmokeTest"})
 	public void OpenBrowser() throws IOException {
+
 		driver = new ChromeDriver(); // Launch Chrome browser
 		driver.manage().window().maximize(); // Maximize browser window
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -34,24 +33,21 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Browser Opened and Navigated to URL: " + url, true);
 	}
 
-	@BeforeMethod(groups= {"RegressionTest","SmokeTest"})
-	public void login() throws IOException {                                      
-		loginpage = new LoginPage(driver);
-		String username = lib.readExcelData("Login", 1, 0);
-		String password = lib.readExcelData("Login", 1, 1);
-		loginpage.getUserNameTextField().sendKeys(username);
-		loginpage.getPasswordTextField().sendKeys(password);
-		loginpage.getLoginButton().click();
-		Reporter.log("Logged in with username: " + username, true);
-	}
-
-	@AfterMethod(groups= {"RegressionTest","SmokeTest"})                                    
-	public void logout() {
-		logoutpage = new LogoutPage(driver);
-		logoutpage.getProfileMenuIcon().click();
-		logoutpage.getLogoutOption().click();
-		Reporter.log("Logged out successfully", true);
-	}
+	/*
+	 * @BeforeMethod(groups= {"RegressionTest","SmokeTest"}) public void
+	 * login(String un,String pwd) throws IOException { loginpage = new
+	 * LoginPage(driver); String username = lib.readExcelData("Login", 1, 0); String
+	 * password = lib.readExcelData("Login", 1, 1);
+	 * loginpage.getUserNameTextField().sendKeys(username);
+	 * loginpage.getPasswordTextField().sendKeys(password);
+	 * loginpage.getLoginButton().click(); Reporter.log("Logged in with username: "
+	 * + username, true); }
+	 * 
+	 * @AfterMethod(groups= {"RegressionTest","SmokeTest"}) public void logout() {
+	 * logoutpage = new LogoutPage(driver); logoutpage.getProfileMenuIcon().click();
+	 * logoutpage.getLogoutOption().click(); Reporter.log("Logged out successfully",
+	 * true); }
+	 */
 
 	@AfterClass(groups= {"RegressionTest","SmokeTest"})
 	public void browserClose() throws InterruptedException {

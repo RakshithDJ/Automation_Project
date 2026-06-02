@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import com.orange.pom.LoginPage;
 import com.orange.pom.LogoutPage;
@@ -21,7 +21,7 @@ public class BaseClass implements IAutoConstant {
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Create explicit wait for admin
 	public DataProviders data;																				// actions
 
-	@BeforeClass(groups= {"RegressionTest","SmokeTest"})
+	@BeforeTest(groups= {"RegressionTest","SmokeTest"})
 	public void OpenBrowser() throws IOException {
 
 		driver = new ChromeDriver(); // Launch Chrome browser
@@ -49,7 +49,7 @@ public class BaseClass implements IAutoConstant {
 	 * true); }
 	 */
 
-	@AfterClass(groups= {"RegressionTest","SmokeTest"})
+	@AfterTest(groups= {"RegressionTest","SmokeTest"})
 	public void browserClose() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.quit();

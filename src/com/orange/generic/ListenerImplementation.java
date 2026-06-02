@@ -23,7 +23,7 @@ public class ListenerImplementation extends BaseClass implements ITestListener, 
 		TakesScreenshot takescreenshot = (TakesScreenshot) driver;
 		File Path = takescreenshot.getScreenshotAs(OutputType.FILE);
 		String timestamp = TimestampUtility.timestamp;
-		File location = new File(SCREENSHOT_PATH + methodName + "_" + timestamp + ".png");
+		File location = new File(SCREENSHOT_PATH + methodName + "_" +timestamp+ ".png");
 		try {
 			FileUtils.copyFile(Path, location);
 		} catch (IOException e) {

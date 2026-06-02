@@ -6,8 +6,8 @@
       <class name="com.orange.Testscript.TestScript4">
         <methods>
           <include name="OpenBrowser"/>
-          <include name="logout"/>
           <include name="browserClose"/>
+          <include name="addEmployee"/>
         </methods>
       </class> <!-- com.orange.Testscript.TestScript4 -->
     </classes>

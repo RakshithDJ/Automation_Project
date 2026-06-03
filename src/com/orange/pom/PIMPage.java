@@ -24,7 +24,7 @@ public class PIMPage extends BaseClass {
 	@FindBy(name = "lastName")
 	private WebElement lastNameTextField;
 
-	@FindBy(xpath = "(//input[@class]/parent::div)[6]")
+	@FindBy(xpath = "(//input[@class])[6]")
 	private WebElement employeeIdTextField;
 
 	@FindBy(xpath = "//button[@type='submit']")

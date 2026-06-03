@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Browser Opened and Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
     <line>
       <![CDATA[Browser Opened and Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
     </line>
@@ -8,10 +11,16 @@
       <![CDATA[Title Verified Successfull]]>
     </line>
     <line>
+      <![CDATA[Added Employee Successfully]]>
+    </line>
+    <line>
       <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
     </line>
     <line>
-      <![CDATA[Exception Handled]]>
+      <![CDATA[Logged out successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed successfully]]>
     </line>
     <line>
       <![CDATA[Logged out successfully]]>
@@ -20,27 +29,29 @@
       <![CDATA[Browser closed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-06-02T16:29:58 IST" name="Default suite" finished-at="2026-06-02T16:31:03 IST" duration-ms="64812">
+  <suite started-at="2026-06-03T11:41:29 IST" name="Suite" finished-at="2026-06-03T11:42:10 IST" duration-ms="41453">
     <groups>
       <group name="SmokeTest">
-        <method signature="TestScript4.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@51bd8b5c]" name="login" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript4.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@c667f46]" name="login" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript5.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript5@895e367]" name="login" class="com.orange.Testscript.TestScript5"/>
       </group> <!-- SmokeTest -->
       <group name="RegressionTest">
-        <method signature="TestScript4.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@51bd8b5c]" name="login" class="com.orange.Testscript.TestScript4"/>
-        <method signature="TestScript4.verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@51bd8b5c]" name="verifiyTitle" class="com.orange.Testscript.TestScript4"/>
-        <method signature="TestScript4.creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@51bd8b5c]" name="creatAdminData" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript4.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@c667f46]" name="login" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript4.verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@c667f46]" name="verifiyTitle" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript4.creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@c667f46]" name="creatAdminData" class="com.orange.Testscript.TestScript4"/>
+        <method signature="TestScript5.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript5@895e367]" name="login" class="com.orange.Testscript.TestScript5"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2026-06-02T16:29:58 IST" name="Default test" finished-at="2026-06-02T16:31:03 IST" duration-ms="64812">
-      <class name="com.orange.Testscript.TestScript4">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:29:58 IST" name="OpenBrowser" finished-at="2026-06-02T16:30:15 IST" duration-ms="16609" status="PASS">
+    <test started-at="2026-06-03T11:41:29 IST" name="Test_002" finished-at="2026-06-03T11:42:07 IST" duration-ms="37957">
+      <class name="com.orange.Testscript.TestScript5">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:41:29 IST" name="OpenBrowser" finished-at="2026-06-03T11:41:44 IST" duration-ms="14905" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Opened and Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:15 IST" name="login" data-provider="login" finished-at="2026-06-02T16:30:18 IST" duration-ms="3432" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:41:44 IST" name="login" data-provider="login" finished-at="2026-06-03T11:41:47 IST" duration-ms="3074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:18 IST" name="login" data-provider="login" finished-at="2026-06-02T16:30:27 IST" duration-ms="9071" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:41:47 IST" name="login" data-provider="login" finished-at="2026-06-03T11:41:48 IST" duration-ms="859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,104 +83,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:27 IST" name="verifiyTitle" finished-at="2026-06-02T16:30:34 IST" duration-ms="6994" status="PASS">
+        <test-method signature="addEmployee()[pri:2, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:41:48 IST" name="addEmployee" finished-at="2026-06-03T11:42:01 IST" duration-ms="13079" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Title Verified Successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifiyTitle -->
-        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:34 IST" name="creatAdminData" finished-at="2026-06-02T16:30:45 IST" duration-ms="10961" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- creatAdminData -->
-        <test-method signature="addEmployee()[pri:4, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:45 IST" name="addEmployee" finished-at="2026-06-02T16:30:57 IST" duration-ms="11598" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=148.0.7778.179)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a60d89f4289f0baa0198a8e541751935, sendKeysToElement {value=[Ljava.lang.CharSequence;@58a2b917, id=f.6D51D11B1AD1C31E72FD1FFD0946EDC7.d.BAB93628FC3150256C01C857D168A889.e.372}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64735}, goog:processID: 30408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64735/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a60d89f4289f0baa0198a8e541751935)] -> xpath: (//input[@class]/parent::div)[6]]
-Session ID: a60d89f4289f0baa0198a8e541751935]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=148.0.7778.179)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a60d89f4289f0baa0198a8e541751935, sendKeysToElement {value=[Ljava.lang.CharSequence;@58a2b917, id=f.6D51D11B1AD1C31E72FD1FFD0946EDC7.d.BAB93628FC3150256C01C857D168A889.e.372}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64735}, goog:processID: 30408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64735/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a60d89f4289f0baa0198a8e541751935)] -> xpath: (//input[@class]/parent::div)[6]]
-Session ID: a60d89f4289f0baa0198a8e541751935
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:112)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at com.orange.Testscript.TestScript4.addEmployee(TestScript4.java:74)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Exception Handled]]>
+              <![CDATA[Added Employee Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:30:57 IST" name="logout" finished-at="2026-06-02T16:31:00 IST" duration-ms="3039" status="PASS">
+        <test-method signature="logout()[pri:3, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:42:01 IST" name="logout" finished-at="2026-06-03T11:42:04 IST" duration-ms="3682" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@51bd8b5c]" started-at="2026-06-02T16:31:00 IST" name="browserClose" finished-at="2026-06-02T16:31:03 IST" duration-ms="2849" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript5@895e367]" started-at="2026-06-03T11:42:04 IST" name="browserClose" finished-at="2026-06-03T11:42:07 IST" duration-ms="2290" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- com.orange.Testscript.TestScript5 -->
+    </test> <!-- Test_002 -->
+    <test started-at="2026-06-03T11:41:29 IST" name="Test_001" finished-at="2026-06-03T11:42:10 IST" duration-ms="41453">
+      <class name="com.orange.Testscript.TestScript4">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:41:29 IST" name="OpenBrowser" finished-at="2026-06-03T11:41:47 IST" duration-ms="18366" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Opened and Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:41:47 IST" name="login" data-provider="login" finished-at="2026-06-03T11:41:49 IST" duration-ms="1733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin2123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:41:49 IST" name="login" data-provider="login" finished-at="2026-06-03T11:41:55 IST" duration-ms="5577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:41:55 IST" name="verifiyTitle" finished-at="2026-06-03T11:41:57 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Title Verified Successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifiyTitle -->
+        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:41:57 IST" name="creatAdminData" finished-at="2026-06-03T11:42:03 IST" duration-ms="6164" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- creatAdminData -->
+        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:42:03 IST" name="logout" finished-at="2026-06-03T11:42:08 IST" duration-ms="4624" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@c667f46]" started-at="2026-06-03T11:42:08 IST" name="browserClose" finished-at="2026-06-03T11:42:10 IST" duration-ms="2314" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>
@@ -177,6 +176,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- browserClose -->
       </class> <!-- com.orange.Testscript.TestScript4 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test_001 -->
+  </suite> <!-- Suite -->
 </testng-results>

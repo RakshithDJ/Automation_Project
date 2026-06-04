@@ -7,9 +7,25 @@
         <methods>
           <include name="OpenBrowser"/>
           <include name="browserClose"/>
+          <include name="logout"/>
+          <include name="login"/>
           <include name="addEmployee"/>
         </methods>
       </class> <!-- com.orange.Testscript.TestScript5 -->
     </classes>
   </test> <!-- Test_002(failed) -->
+  <test thread-count="5" parallel="tests" name="Test_001(failed)">
+    <classes>
+      <class name="com.orange.Testscript.TestScript4">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="browserClose"/>
+          <include name="verifiyTitle"/>
+          <include name="creatAdminData"/>
+        </methods>
+      </class> <!-- com.orange.Testscript.TestScript4 -->
+    </classes>
+  </test> <!-- Test_001(failed) -->
 </suite> <!-- Failed suite [Suite] -->

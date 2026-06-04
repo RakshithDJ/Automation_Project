@@ -2,30 +2,49 @@ package com.orange.generic;
 
 import java.io.IOException;
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.orange.pom.LoginPage;
 import com.orange.pom.LogoutPage;
 
 public class BaseClass implements IAutoConstant {
-
-	public static WebDriver driver;
+	public WebDriver driver;
 	public LoginPage loginpage;
 	public LogoutPage logoutpage;
 	public FileLib lib;
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Create explicit wait for admin
-																					// actions
+	public DataProviders data; // actions
 
-	@BeforeClass(groups= {"RegressionTest","SmokeTest"})
-	public void OpenBrowser() throws IOException {
-		driver = new ChromeDriver(); // Launch Chrome browser
+	@Parameters("browser") // need to pass the browser parameter from testng.xml to specify which browser
+							// to use for testing
+	@BeforeTest(groups = { "RegressionTest", "SmokeTest" })
+	public void OpenBrowser(String browser) throws IOException {
+		if (browser.equalsIgnoreCase("chrome")) {
+
+			driver = new ChromeDriver();
+		} // Launch Chrome browser
+		else if (browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+
+		} else if (browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		} else {
+			Reporter.log("Defaulting to Chrome browser as no valid browser name provided", true);
+			driver = new ChromeDriver();
+		}
+
 		driver.manage().window().maximize(); // Maximize browser window
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		lib = new FileLib();
@@ -34,8 +53,8 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Browser Opened and Navigated to URL: " + url, true);
 	}
 
-	@BeforeMethod(groups= {"RegressionTest","SmokeTest"})
-	public void login() throws IOException {                                      
+	@BeforeMethod(groups = { "RegressionTest", "SmokeTest" })
+	public void login(String un, String pwd) throws IOException {
 		loginpage = new LoginPage(driver);
 		String username = lib.readExcelData("Login", 1, 0);
 		String password = lib.readExcelData("Login", 1, 1);
@@ -45,7 +64,7 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Logged in with username: " + username, true);
 	}
 
-	@AfterMethod(groups= {"RegressionTest","SmokeTest"})                                    
+	@AfterMethod(groups = { "RegressionTest", "SmokeTest" })
 	public void logout() {
 		logoutpage = new LogoutPage(driver);
 		logoutpage.getProfileMenuIcon().click();
@@ -53,7 +72,7 @@ public class BaseClass implements IAutoConstant {
 		Reporter.log("Logged out successfully", true);
 	}
 
-	@AfterClass(groups= {"RegressionTest","SmokeTest"})
+	@AfterTest(groups = { "RegressionTest", "SmokeTest" })
 	public void browserClose() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.quit();
@@ -61,4 +80,3 @@ public class BaseClass implements IAutoConstant {
 	}
 
 }
-

@@ -11,5 +11,5 @@ public class TimestampUtility {
 	static int hour = cal.get(Calendar.HOUR_OF_DAY);
 	static int min = cal.get(Calendar.MINUTE);
 	static int sec = cal.get(Calendar.SECOND);
-	static String timestamp = year + "_" + month + "_" + day + "_" + hour + "_" + min + "_" + sec;
+	static String timestamp = year + ":" + month + ":" + day + ":" + hour + ":" + min + ":" + sec;
 }

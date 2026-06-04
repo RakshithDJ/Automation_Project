@@ -3,19 +3,18 @@ package com.orange.generic;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class IRetryAnalyzerImplementation implements IRetryAnalyzer{
-	
-	int retryCount =0;
-	int maxRetryCount = 2; // retry 2 times
-	
+public class IRetryAnalyzerImplementation implements IRetryAnalyzer {
+
+	int count = 0;
+	int retryLimit = 3;
+
 	@Override
 	public boolean retry(ITestResult result) {
-		if(retryCount < maxRetryCount)
-		{
-			retryCount++;
+		if (count < retryLimit) {
+			count++;
 			return true;
 		}
-		
-		return false; // stop retry
+		return false;
 	}
+
 }

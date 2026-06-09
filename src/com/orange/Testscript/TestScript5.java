@@ -8,6 +8,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.orange.generic.BaseClass;
+import com.orange.generic.IRetryAnalyzerImplementation;
 import com.orange.pom.AdminPage;
 import com.orange.pom.LoginPage;
 import com.orange.pom.LogoutPage;

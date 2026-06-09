@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>TestNG:  TestA</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestA</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 09 14:48:41 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89626 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orange.Testscript.TestScript4.creatAdminData()'><b>creatAdminData</b><br>Test class: com.orange.Testscript.TestScript4<br/>
+<a href="#Output-1153469746" onClick='toggleBox("Output-1153469746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1153469746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1153469746">
+Clicked on Admin TestCase Pass :Regression TestMethod <br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.orange.Testscript.TestScript4@6b0d80ed</td></tr>
+<tr>
+<td title='com.orange.Testscript.TestScript4.logout()'><b>logout</b><br>Test class: com.orange.Testscript.TestScript4<br/>
+<a href="#Output-1102290187" onClick='toggleBox("Output-1102290187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1102290187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1102290187">
+Logged out successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.orange.Testscript.TestScript4@6b0d80ed</td></tr>
+<tr>
+<td title='com.orange.Testscript.TestScript4.login()'><b>login</b><br>Test class: com.orange.Testscript.TestScript4<br>Parameters: Admin, admin123</td>
+<td></td>
+<td>11</td>
+<td>com.orange.Testscript.TestScript4@6b0d80ed</td></tr>
+<tr>
+<td title='com.orange.Testscript.TestScript4.login()'><b>login</b><br>Test class: com.orange.Testscript.TestScript4<br>Parameters: admin12, admin2123</td>
+<td></td>
+<td>13</td>
+<td>com.orange.Testscript.TestScript4@6b0d80ed</td></tr>
+<tr>
+<td title='com.orange.Testscript.TestScript4.verifiyTitle()'><b>verifiyTitle</b><br>Test class: com.orange.Testscript.TestScript4<br/>
+<a href="#Output-472550645" onClick='toggleBox("Output-472550645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472550645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472550645">
+Title Verified Successfull<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.orange.Testscript.TestScript4@6b0d80ed</td></tr>
+</table><p>
+</body>
+</html>

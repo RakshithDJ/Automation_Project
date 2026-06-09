@@ -11,19 +11,19 @@
       <![CDATA[Title Verified Successfull]]>
     </line>
     <line>
-      <![CDATA[Title Verified Successfull]]>
+      <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
     </line>
     <line>
-      <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
+      <![CDATA[Title Verified Successfull]]>
     </line>
     <line>
       <![CDATA[Logged out successfully]]>
     </line>
     <line>
-      <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
+      <![CDATA[Browser closed successfully]]>
     </line>
     <line>
-      <![CDATA[Browser closed successfully]]>
+      <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
     </line>
     <line>
       <![CDATA[Logged out successfully]]>
@@ -32,7 +32,7 @@
       <![CDATA[Browser closed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-06-04T15:04:46 IST" name="Suite" finished-at="2026-06-04T15:06:12 IST" duration-ms="86453">
+  <suite started-at="2026-06-09T14:48:41 IST" name="Suite" finished-at="2026-06-09T14:50:41 IST" duration-ms="120026">
     <groups>
       <group name="SmokeTest">
         <method signature="TestScript4.login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@6b0d80ed]" name="login" class="com.orange.Testscript.TestScript4"/>
@@ -47,9 +47,9 @@
         <method signature="TestScript4.creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@1cd629b3]" name="creatAdminData" class="com.orange.Testscript.TestScript4"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2026-06-04T15:04:46 IST" name="TestA" finished-at="2026-06-04T15:06:09 IST" duration-ms="82994">
+    <test started-at="2026-06-09T14:48:41 IST" name="TestA" finished-at="2026-06-09T14:50:11 IST" duration-ms="89626">
       <class name="com.orange.Testscript.TestScript4">
-        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:04:46 IST" name="OpenBrowser" finished-at="2026-06-04T15:05:25 IST" duration-ms="39409" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:48:41 IST" name="OpenBrowser" finished-at="2026-06-09T14:49:01 IST" duration-ms="19917" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:05:25 IST" name="login" data-provider="login" finished-at="2026-06-04T15:05:29 IST" duration-ms="3452" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:49:01 IST" name="login" data-provider="login" finished-at="2026-06-09T14:49:14 IST" duration-ms="13178" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:05:29 IST" name="login" data-provider="login" finished-at="2026-06-04T15:05:37 IST" duration-ms="8367" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:49:14 IST" name="login" data-provider="login" finished-at="2026-06-09T14:49:26 IST" duration-ms="11316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,28 +95,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:05:37 IST" name="verifiyTitle" finished-at="2026-06-04T15:05:42 IST" duration-ms="5106" status="PASS">
+        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:49:26 IST" name="verifiyTitle" finished-at="2026-06-09T14:49:38 IST" duration-ms="12009" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Title Verified Successfull]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifiyTitle -->
-        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:05:42 IST" name="creatAdminData" finished-at="2026-06-04T15:05:58 IST" duration-ms="15403" status="PASS">
+        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:49:38 IST" name="creatAdminData" finished-at="2026-06-09T14:50:00 IST" duration-ms="22172" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
             </line>
           </reporter-output>
         </test-method> <!-- creatAdminData -->
-        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:05:58 IST" name="logout" finished-at="2026-06-04T15:06:04 IST" duration-ms="6433" status="PASS">
+        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:50:00 IST" name="logout" finished-at="2026-06-09T14:50:08 IST" duration-ms="8009" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-04T15:06:04 IST" name="browserClose" finished-at="2026-06-04T15:06:09 IST" duration-ms="4758" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@6b0d80ed]" started-at="2026-06-09T14:50:08 IST" name="browserClose" finished-at="2026-06-09T14:50:11 IST" duration-ms="2964" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>
@@ -125,9 +125,9 @@
         </test-method> <!-- browserClose -->
       </class> <!-- com.orange.Testscript.TestScript4 -->
     </test> <!-- TestA -->
-    <test started-at="2026-06-04T15:04:46 IST" name="TestB" finished-at="2026-06-04T15:06:12 IST" duration-ms="86453">
+    <test started-at="2026-06-09T14:48:41 IST" name="TestB" finished-at="2026-06-09T14:50:41 IST" duration-ms="120026">
       <class name="com.orange.Testscript.TestScript4">
-        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:04:46 IST" name="OpenBrowser" finished-at="2026-06-04T15:05:33 IST" duration-ms="47220" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:48:41 IST" name="OpenBrowser" finished-at="2026-06-09T14:49:25 IST" duration-ms="43538" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:05:33 IST" name="login" data-provider="login" finished-at="2026-06-04T15:05:49 IST" duration-ms="15866" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:49:25 IST" name="login" data-provider="login" finished-at="2026-06-09T14:49:48 IST" duration-ms="23473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:05:49 IST" name="login" data-provider="login" finished-at="2026-06-04T15:05:56 IST" duration-ms="6588" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:49:48 IST" name="login" data-provider="login" finished-at="2026-06-09T14:49:53 IST" duration-ms="5369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,28 +173,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:05:56 IST" name="verifiyTitle" finished-at="2026-06-04T15:05:56 IST" duration-ms="12" status="PASS">
+        <test-method signature="verifiyTitle()[pri:2, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:49:54 IST" name="verifiyTitle" finished-at="2026-06-09T14:50:07 IST" duration-ms="13596" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Title Verified Successfull]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifiyTitle -->
-        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:05:56 IST" name="creatAdminData" finished-at="2026-06-04T15:06:07 IST" duration-ms="10923" status="PASS">
+        <test-method signature="creatAdminData()[pri:3, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:50:07 IST" name="creatAdminData" finished-at="2026-06-09T14:50:28 IST" duration-ms="20449" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Admin TestCase Pass :Regression TestMethod ]]>
             </line>
           </reporter-output>
         </test-method> <!-- creatAdminData -->
-        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:06:07 IST" name="logout" finished-at="2026-06-04T15:06:09 IST" duration-ms="2908" status="PASS">
+        <test-method signature="logout()[pri:4, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:50:28 IST" name="logout" finished-at="2026-06-09T14:50:38 IST" duration-ms="10900" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-04T15:06:09 IST" name="browserClose" finished-at="2026-06-04T15:06:12 IST" duration-ms="2906" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.orange.Testscript.TestScript4@1cd629b3]" started-at="2026-06-09T14:50:38 IST" name="browserClose" finished-at="2026-06-09T14:50:41 IST" duration-ms="2675" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully]]>

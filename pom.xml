@@ -79,7 +79,6 @@
 			<version>2.26.0</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>

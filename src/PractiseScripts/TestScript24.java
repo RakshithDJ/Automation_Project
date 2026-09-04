@@ -60,7 +60,7 @@ public class TestScript24 {
 
 		Actions a = new Actions(driver);
 		// Creates an Actions class object to perform advanced mouse operations
-
+         
 		a.clickAndHold(d).dragAndDropBy(d, 216, -91).perform();
 		// Clicks and holds the draggable element, then moves it by the given X and Y offset values
 

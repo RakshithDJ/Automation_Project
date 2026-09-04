@@ -48,7 +48,7 @@ public class TestScript19 {
 
 		driver.findElement(By.xpath("(//button[text()='view more'])[2]")).click();
 		// Clicks the second "view more" button which opens a new browser window
-
+        
 		Set<String> s = driver.getWindowHandles();
 		// Stores all unique window handles (parent + child windows) in a Set
 

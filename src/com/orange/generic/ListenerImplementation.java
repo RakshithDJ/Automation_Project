@@ -9,7 +9,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-public class ListenerImplementation extends BaseClass implements ITestListener, IAutoConstant {
+public class ListenerImplementation extends BaseClass implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {

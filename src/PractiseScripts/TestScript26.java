@@ -1,7 +1,9 @@
 package PractiseScripts;
 
 import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +29,7 @@ public class TestScript26 {
 
 		WebDriver driver = new ChromeDriver(options);
 		// Launches Chrome browser with the specified options
-
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		// Sets an implicit wait of 5 seconds for element discovery
 
